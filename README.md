@@ -1,19 +1,19 @@
-# Project Title
+# Registro aventurero
 
-A brief description of what this project does and who it's for
+Aplicación para llevar un registro básico de las aventuras que viven los personajes del Señor de los Anillos
 
 ## Run Locally
 
 Clone the project
 
 ```bash
-  git clone https://link-to-project
+  git clone https://github.com/jcpedrozo/dashboard.git
 ```
 
 Go to the project directory
 
 ```bash
-  cd my-project
+  cd dashboard
 ```
 
 Install dependencies
