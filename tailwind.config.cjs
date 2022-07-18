@@ -17,6 +17,10 @@ module.exports = {
         'light-gray': '#F7F7F7',
         'half-transparent': 'rgba(0, 0, 0, 0.5)',
       },
+      colors: {
+        'items-gray': '#A6AABF', //Items sidebar
+        'items-purple': '#373B5C', //Items sidebar
+      },
       borderWidth: {
         1: '1px',
       },
