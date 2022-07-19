@@ -1,26 +1,26 @@
-import { ReactComponent as Dashboard } from '../assets/Iconos/Dashboard.svg'
-import { ReactComponent as Calendar } from '../assets/Iconos/Calendar.svg'
-import { ReactComponent as Characters } from '../assets/Iconos/Characters.svg'
-import { ReactComponent as Chat } from '../assets/Iconos/Chat.svg'
+import { ReactComponent as DashboardIcon } from '../assets/Iconos/Dashboard.svg'
+import { ReactComponent as CalendarIcon } from '../assets/Iconos/Calendar.svg'
+import { ReactComponent as CharactersIcon } from '../assets/Iconos/Characters.svg'
+import { ReactComponent as ChatIcon } from '../assets/Iconos/Chat.svg'
 
 const links = [
   {
     items: [
       {
-        name: 'Dashboard',
-        icon: <Dashboard />,
+        name: 'dashboard',
+        icon: <DashboardIcon />,
       },
       {
-        name: 'Calendar',
-        icon: <Calendar />,
+        name: 'calendar',
+        icon: <CalendarIcon />,
       },
       {
-        name: 'Characters',
-        icon: <Characters />,
+        name: 'characters',
+        icon: <CharactersIcon />,
       },
       {
-        name: 'Chat',
-        icon: <Chat />,
+        name: 'chat',
+        icon: <ChatIcon />,
       },
     ],
   },

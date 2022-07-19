@@ -42,7 +42,7 @@ const Sidebar = () => {
                   }
                 >
                   <div className="w-[25px] mr-[10px]">{item.icon}</div>
-                  <span>{item.name}</span>
+                  <span className="capitalize">{item.name}</span>
                   {/* <div>
                   <img src={Star} />
                 </div> */}
