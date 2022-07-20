@@ -2,8 +2,8 @@ import React from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { Sidebar } from './components'
 import Dashboard from './pages/Dashboard'
-import './App.css'
 import FormProvider from './context/FormProvider'
+import './App.css'
 
 const App = () => {
   return (
