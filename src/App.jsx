@@ -3,20 +3,23 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { Sidebar } from './components'
 import Dashboard from './pages/Dashboard'
 import './App.css'
+import FormProvider from './context/FormProvider'
 
 const App = () => {
   return (
     <BrowserRouter>
-      <div className="flex">
-        <div className="w-[220px] relative sidebar dark:bg-secondary-dark-bg bg-white">
-          <Sidebar />
-        </div>
+      <FormProvider>
+        <div className="flex">
+          <div className="w-[220px] relative sidebar dark:bg-secondary-dark-bg bg-white">
+            <Sidebar />
+          </div>
 
-        <Routes>
-          {/* pages  */}
-          <Route path="/dashboard" element={<Dashboard />} />
-        </Routes>
-      </div>
+          <Routes>
+            {/* pages  */}
+            <Route path="/dashboard" element={<Dashboard />} />
+          </Routes>
+        </div>
+      </FormProvider>
     </BrowserRouter>
   )
 }

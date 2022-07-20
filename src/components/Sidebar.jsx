@@ -19,7 +19,7 @@ const Sidebar = () => {
     <div className="flex flex-col h-screen justify-between">
       <div>
         <div className="grid place-items-center">
-          <Link to="" className="items-center mt-[25.5px] flex">
+          <Link to="/" className="items-center mt-[25.5px] flex">
             <div className="w-11 mr-[10.67px]">
               <MagicHat />
             </div>
@@ -30,9 +30,9 @@ const Sidebar = () => {
         </div>
 
         <div className="grid place-items-center mt-[49.5px]">
-          {links.map((link) => (
+          {links.map(link => (
             <div className="grid gap-3" key={link.items}>
-              {link.items.map((item) => (
+              {link.items.map(item => (
                 <NavLink
                   to={`/${item.name}`}
                   key={item.name}
