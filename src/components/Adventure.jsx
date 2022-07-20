@@ -1,7 +1,7 @@
 import React from 'react'
 import plaheholder from '../assets/placeholder.png'
 
-const Adventures = () => {
+const Adventure = () => {
   return (
     <div className="mx-auto rounded-lg bg-color-adventures w-4/5 mb-4">
       <div className="py-5 flex justify-start items-center">
@@ -32,4 +32,4 @@ const Adventures = () => {
   )
 }
 
-export default Adventures
+export default Adventure

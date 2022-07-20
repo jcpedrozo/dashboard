@@ -1,7 +1,13 @@
-import React from 'react'
-import Adventures from '../components/Adventures'
+import React, { useState } from 'react'
+import { Adventure, SliderOver } from '../components'
 
 const Dashboard = () => {
+  const [isOpen, setIsOpen] = useState(false)
+
+  const handleClose = () => {
+    setIsOpen(!isOpen)
+  }
+
   return (
     <div className="flex-1 bg-dashboard-color">
       <h1 className="mx-auto mt-[50px] mb-[35px] font-semibold text-xl text-items-purple w-4/5">
@@ -15,11 +21,15 @@ const Dashboard = () => {
           <option value="FR">France</option>
           <option value="DE">Germany</option>
         </select>
-        <button className="bg-color-button text-button-light-gray font-semibold text-base px-5 rounded-full">
+        <button
+          className="bg-color-button text-button-light-gray font-semibold text-base px-5 rounded-full"
+          onClick={handleClose}
+        >
           New Adventure
         </button>
       </div>
-      <Adventures />
+      <SliderOver isOpen={isOpen} handleClose={handleClose} />
+      <Adventure />
     </div>
   )
 }
